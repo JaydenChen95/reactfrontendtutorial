@@ -229,7 +229,7 @@ function HomeGuest() {
             </div>
             <div className="form-group">
               <label htmlFor="password-register" className="text-muted mb-1">
-                <small>Password</small>
+                <small>Password (Please do not use real password)</small>
               </label>
               <input onChange={e => dispatch({ type: "passwordImmediately", value: e.target.value })} id="password-register" name="password" className="form-control" type="password" placeholder="Create a password" />
               <CSSTransition in={state.password.hasErrors} timeout={330} classNames="liveValidateMessage" unmountOnExit>
